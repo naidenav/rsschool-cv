@@ -18,6 +18,8 @@ I am seeking a position with a company where i can realize my intellectual and p
 - JavaScript
 - Git
 
+For half a year before the rs-school course I studied html, css, javascript, node js and created my own website about cooking.
+
 ## SAMPLE CODE
 ```javascript
 $(document).ready(function(){
