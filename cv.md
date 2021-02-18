@@ -64,7 +64,7 @@ window.onload = displayCategory;
 ## WORK EXPERIENCE
 
 ## EDUCATION
-- Belarussian National Technical University
+- **Belarussian National Technical University**
 Civil Engineering faculty, Industrial and civil Engineering (2011 - 2016)
 
 ## ENGLISH
