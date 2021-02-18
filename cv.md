@@ -1,13 +1,13 @@
 # ALEXANDER NAIDEN
 
 ## PERSONAL INFORMATION
-|               |                                             |
-|---------------|---------------------------------------------|
-|Address:       |Karl Liebknecht str., 220036 Minsk, Belarus  |
-|Telephone:     |+375 29 859 67 56                            |
-|Email:         |naidenav@gmail.com                           |
-|Date of bigth: |15th April 1994                              |
-|Marital status:|single                                       |
+|                   |                                             |
+|-------------------|---------------------------------------------|
+|**Address:**       |Karl Liebknecht str., 220036 Minsk, Belarus  |
+|**Telephone:**     |+375 29 859 67 56                            |
+|**Email:**         |naidenav@gmail.com                           |
+|**Date of bigth:** |15th April 1994                              |
+|**Marital status:**|single                                       |
 
 ## OBJECTIVE
 I am seeking a position with a company where i can realize my intellectual and physical capabilities. I am used to learning and adapting to something new. In programming, I am attracted to solving complex problems and the need to use creativity and ingenuity.
