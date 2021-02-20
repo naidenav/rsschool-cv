@@ -77,4 +77,11 @@ tr {
   vertical-align: top;
 }
 
-h1 { margin-left: 30px; }
+h1 {
+  margin-left: 30px; 
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: uppercase;
+}
