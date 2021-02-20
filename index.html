@@ -1,0 +1,114 @@
+﻿<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/github.css">
+    <script src="js/rainbow-custom.min.js"></script>
+    <title>CV</title>
+  </head>
+
+  <body>
+    <main>
+      <img id="ava" src="images/avatar.jpg" height="200" width="200">
+      <section id="name-section">
+        <h1>ALEXANDER NAIDEN</h1>
+      </section>
+      <section>
+        <h3>PERSONAL INFORMATION</h3>
+        <hr>
+        <table>
+          <tr>
+            <td><img src="icons/home.svg" height="18" width="18"></td>
+            <td class="second-column">Address:</td>
+            <td>Karl Liebknecht str., 220036 Minsk, Belarus</td>
+          </tr>
+          <tr>
+            <td><img src="icons/telephone.svg" height="18" width="18"></td>
+            <td class="second-column">Telephone:</td>
+            <td>+375 29 859 67 56</td>
+          </tr>
+          <tr>
+            <td><img src="icons/mail.svg" height="18" width="18"></td>
+            <td class="second-column">Email:</td>
+            <td>naidenav@gmail.com</td>
+          </tr>
+          <tr>
+            <td><img src="icons/calendar.svg" height="18" width="18"></td>
+            <td class="second-column">Date of bigth:</td>
+            <td>15th April 1994</td>
+          </tr>
+          <tr>
+            <td><img src="icons/couple.svg" height="18" width="18"></td>
+            <td class="second-column">Marital status:</td>
+            <td>single</td>
+          </tr>
+        </table>
+      <section>
+        <h3>OBJECTIVE</h3>
+        <hr>
+        <p>I am seeking a position with a company where i can realize my intellectual and physical capabilities. I am used to learning and adapting to something new. In programming, I am attracted to solving complex problems and the need to use creativity and ingenuity.</p>
+      </section>
+      <section>
+        <h3>SKILLS</h3>
+        <hr>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+          <li>Node js</li>
+        </ul>
+        <p>For half a year before the rs-school course I studied html, css, javascript, node js and created my own website about cooking.</p>
+      </section>
+      <section>
+        <h3>SAMPLE CODE</h3>
+        <hr>
+        <pre><code data-language="javascript">
+      $(document).ready(function(){
+        $('.menu-btn').click(function(event){
+          event.preventDefault();
+          $('.menu').toggleClass('menu-active');
+          $('.content').toggleClass('content-active');
+          $('.menu-btn').toggleClass('menu-btn-active');
+        });
+      });
+      function displayRecipe() {
+        const recipeNumber = window.location.search;
+        const urlParams = new URLSearchParams(recipeNumber);
+        const recipeURLParams = urlParams.get('number-recipe');
+
+        $.getJSON("recipes.json", function(data) {
+          let dataRecipes = data;
+          let recipeOutput;
+          recipeOutput = "&lth3&gtИнгредиенты:&lt/h3&gt&ltul&gt";
+          for (let j in dataRecipes[recipeURLParams].ingredients) {
+            recipeOutput += "&ltli&gt" + dataRecipes[recipeURLParams].ingredients[j].ingredientName + 
+            " - " + dataRecipes[recipeURLParams].ingredients[j].ingredientQuantity
+          };
+          recipeOutput += "&lt/ul&gt&lth3&gtРецепт:&lt/h3&gt";
+          recipeOutput += "&ltp&gt" + dataRecipes[recipeURLParams].recipe + "&lt/p&gt";
+          document.getElementById('recipe-page').innerHTML=recipeOutput;
+        });
+      };
+      window.onload = displayRecipe;</code></pre>
+      </section>
+      <section>
+        <h3>WORK EXPERIENCE</h3>
+        <hr>
+      </section>
+      <section>
+        <h3>EDUCATION</h3>
+        <hr>
+        <p><b>Belarussian National Technical University</b> - 
+Civil Engineering faculty, Industrial and civil Engineering (2011 - 2016)</p>
+      </section>
+      <section>
+        <h3>ENGLISH</h3>
+        <hr>
+        <p>A2 - Pre-Intermediate</p>
+      </section>
+    </main>
+  </body>
+</html>
