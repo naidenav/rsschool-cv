@@ -23,12 +23,17 @@
 
 body {
   margin: 0;
-  padding: 30px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Montserrat", Arial, sans-serif;
   background: grey;
+}
+
+header {
+  width: 70%;
+  text-align: right;
+  color: rgb(206, 206, 206);
 }
 
 main {
@@ -38,6 +43,15 @@ main {
   width: 70%;
   background: white;
   box-shadow: 10px 10px 30px rgba(0,0,0,.5);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 70%;
+  line-height: 2em;
+  color: rgb(44, 44, 44);
 }
 
 hr {
@@ -51,21 +65,21 @@ p { text-align: justify; }
 #ava {
   position: absolute;
   right: 20%;
-  top: 70px;
+  top: 160px;
   border: 10px solid white; 
   border-radius: 50%;
 }
 
 #name-section {
   margin-top: 0;
-  padding-left: 30px; 
+  padding-left: 70px; 
   display: flex;
   align-items: center;
-  height: 3em;
+  height: 5em;
   text-transform: uppercase;
   color: white;
   text-shadow: 2px 2px 5px rgba(73,73,73,.7);
-  background: rgb(100,207,157);
+  background: rgb(84, 182, 157);
 }
 
 h3, h4 {
@@ -73,6 +87,12 @@ h3, h4 {
 }
 
 #contacts {
+  margin-right: 50%;
   list-style: none;
   line-height: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
