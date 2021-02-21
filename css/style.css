@@ -48,11 +48,6 @@ hr {
 
 p { text-align: justify; }
 
-.second-column {
-  width: 10em;
-  font-weight: 500;
-}
-
 #ava {
   position: absolute;
   right: 20%;
@@ -62,26 +57,22 @@ p { text-align: justify; }
 }
 
 #name-section {
+  margin-top: 0;
+  padding-left: 30px; 
   display: flex;
   align-items: center;
-  height: 7em;
+  height: 3em;
+  text-transform: uppercase;
   color: white;
   text-shadow: 2px 2px 5px rgba(73,73,73,.7);
   background: rgb(100,207,157);
 }
 
-table { width: 70%; }
-
-tr {
-  height: 2em;
-  vertical-align: top;
-}
-
-h1 {
-  margin-left: 30px; 
+h3, h4 {
   text-transform: uppercase;
 }
 
-h3 {
-  text-transform: uppercase;
+#contacts {
+  list-style: none;
+  line-height: 2em;
 }

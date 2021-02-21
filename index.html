@@ -12,39 +12,41 @@
   <body>
     <main>
       <img id="ava" src="images/avatar.jpg" height="200" width="200" alt="avatar">
-      <section id="name-section">
-        <h1>Alexander Naiden</h1>
+      <h1 id="name-section">Alexander Naiden</h1>
+      <section>
+        <h3>Contacts</h3>
+        <hr>
+        <ul id="contacts">
+          <li><b>Address:</b>  Karl Liebknecht str., 220036 Minsk, Belarus</li>
+          <li><b>Telephone:</b>  +375 29 859 67 56</li>
+          <li><b>Email:</b>  naidenav@gmail.com</li>
+        </ul>
       </section>
       <section>
         <h3>Personal information</h3>
         <hr>
-        <table>
-          <tr>
-            <td><img src="icons/home.svg" height="18" width="18" alt="adrress-icon"></td>
-            <td class="second-column">Address:</td>
-            <td>Karl Liebknecht str., 220036 Minsk, Belarus</td>
-          </tr>
-          <tr>
-            <td><img src="icons/telephone.svg" height="18" width="18" alt="telephone-icon"></td>
-            <td class="second-column">Telephone:</td>
-            <td>+375 29 859 67 56</td>
-          </tr>
-          <tr>
-            <td><img src="icons/mail.svg" height="18" width="18" alt="email-icon"></td>
-            <td class="second-column">Email:</td>
-            <td>naidenav@gmail.com</td>
-          </tr>
-          <tr>
-            <td><img src="icons/calendar.svg" height="18" width="18" alt="calendar-icon"></td>
-            <td class="second-column">Date of bigth:</td>
-            <td>15th April 1994</td>
-          </tr>
-          <tr>
-            <td><img src="icons/couple.svg" height="18" width="18" alt="couple-icon"></td>
-            <td class="second-column">Marital status:</td>
-            <td>single</td>
-          </tr>
-        </table>
+        <h4>Personal and business qualities:</h4>
+        <ul>
+          <li>Attention to details</li>
+          <li>Commitment to professional development</li>
+          <li>Willingness to make decisions independently</li>
+          <li>Ability to easily find contact with people</li>
+          <li>Self confidence</li>
+          <li>Responsiveness</li>
+          <li>Politeness and decency</li>
+          <li>Optimism</li>
+        </ul>
+        <h4>Hobbies and interests:</h4>
+        <ul>
+          <li>Playing the guitar</li>
+          <li>Skates</li>
+          <li>Skies</li>
+          <li>Outdoor activities</li>
+          <li>Learning foreign languages</li>
+          <li>Visiting cinema, theaters, exhibitions</li>
+          <li>Reading professional and fictional literature</li>
+        </ul>
+      </section>
       <section>
         <h3>Objective</h3>
         <hr>
@@ -82,13 +84,13 @@
         $.getJSON("recipes.json", function(data) {
           let dataRecipes = data;
           let recipeOutput;
-          recipeOutput = "&lth3&gtИнгредиенты:&lt/h3&gt&ltul&gt";
+          recipeOutput = "&lt;h3&gt;Ингредиенты:&lt;/h3&gt;&lt;ul&gt;";
           for (let j in dataRecipes[recipeURLParams].ingredients) {
-            recipeOutput += "&ltli&gt" + dataRecipes[recipeURLParams].ingredients[j].ingredientName + 
+            recipeOutput += "&lt;li&gt;" + dataRecipes[recipeURLParams].ingredients[j].ingredientName + 
             " - " + dataRecipes[recipeURLParams].ingredients[j].ingredientQuantity
           };
-          recipeOutput += "&lt/ul&gt&lth3&gtРецепт:&lt/h3&gt";
-          recipeOutput += "&ltp&gt" + dataRecipes[recipeURLParams].recipe + "&lt/p&gt";
+          recipeOutput += "&lt;/ul&gt;&lt;h3&gt;Рецепт:&lt;/h3&gt;";
+          recipeOutput += "&lt;p&gt;" + dataRecipes[recipeURLParams].recipe + "&lt;/p&gt;";
           document.getElementById('recipe-page').innerHTML=recipeOutput;
         });
       };
