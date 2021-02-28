@@ -30,13 +30,13 @@ body {
   background: grey;
 }
 
-header {
+.header {
   width: 70%;
   text-align: right;
   color: rgb(206, 206, 206);
 }
 
-main {
+.main {
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -45,10 +45,11 @@ main {
   box-shadow: 10px 10px 30px rgba(0,0,0,.5);
 }
 
-footer {
+.footer {
+  margin-top: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
   width: 70%;
   line-height: 2em;
   color: rgb(44, 44, 44);
@@ -86,7 +87,7 @@ h3, h4 {
   text-transform: uppercase;
 }
 
-#contacts {
+.contacts {
   margin-right: 50%;
   list-style: none;
   line-height: 2em;
@@ -95,4 +96,10 @@ h3, h4 {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  width: max-content;
 }
