@@ -19,7 +19,14 @@
     font-style: normal;
 }
 
+html {
+  box-sizing: border-box;
+}
 
+*, *::before, *::after {
+  box-sizing: inherit;
+  transition-duration: inherit;
+}
 
 body {
   margin: 0;
@@ -30,17 +37,34 @@ body {
   background: grey;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 95%;
+}
+
 .header {
-  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   text-align: right;
   color: rgb(206, 206, 206);
 }
 
+.header h2 {
+  margin-right: 0;
+  align-self: flex-end;
+}
+
 .main {
-  padding: 10px;
+  position: relative;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
-  width: 90%;
+  align-items: center;
+  width: 100%;
   background: white;
   box-shadow: 10px 10px 30px rgba(0,0,0,.5);
 }
@@ -58,8 +82,9 @@ body {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
   line-height: 2em;
   color: rgb(44, 44, 44);
 }
@@ -73,9 +98,10 @@ hr {
 p { text-align: justify; }
 
 #ava {
+  box-sizing: content-box;
   position: absolute;
   right: 10%;
-  top: 140px;
+  top: 70px;
   border: 5px solid white; 
   border-radius: 50%;
   height: 100px;
@@ -87,16 +113,16 @@ p { text-align: justify; }
   width: 100%;
 }
 
-h1 {
-  font-size: 24px;
-}
-
 #name-section {
   margin-top: 0;
-  padding-left: 70px; 
-  padding-right: 70px;
+  padding-left: 2.5%;
+  padding-right: 100px; 
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 24px;
   height: 5em;
   text-transform: uppercase;
   color: white;
@@ -109,9 +135,9 @@ h3, h4 {
 }
 
 .contacts {
-  margin-right: 50%;
+  margin-right: 10%;
   list-style: none;
-  line-height: 2em;
+  line-height: 1.5em;
 }
 
 a {
@@ -130,6 +156,13 @@ a {
 }
 
 @media screen and (min-width: 900px) {
+  .wrapper {
+    width: 90%;
+  }
+  #name-section {
+    margin-top: 0;
+    padding-left: 5%;
+  }  
   .header {
     width: 70%;
   }
@@ -141,8 +174,8 @@ a {
   }
   #ava {
     position: absolute;
-    right: 20%;
-    top: 160px;
+    right: 10%;
+    top: 50px;
     border: 10px solid white; 
     border-radius: 50%;
     height: 200px;
@@ -151,7 +184,9 @@ a {
   h1 {
     font-size: 30px;
   }
-
+  .contacts {
+    margin-right: 40%;
+  }  
 }
 @media screen and (min-width: 1400px) {
   h1 {
