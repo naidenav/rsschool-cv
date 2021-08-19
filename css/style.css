@@ -31,7 +31,7 @@ body {
 }
 
 .header {
-  width: 70%;
+  width: 90%;
   text-align: right;
   color: rgb(206, 206, 206);
 }
@@ -40,7 +40,7 @@ body {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 90%;
   background: white;
   box-shadow: 10px 10px 30px rgba(0,0,0,.5);
 }
@@ -51,7 +51,7 @@ body {
 }
 
 .link:hover {
-  color: rgb(83, 211, 183);
+  color: rgb(68, 190, 164);
 }
 
 .footer {
@@ -59,7 +59,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 70%;
+  width: 90%;
   line-height: 2em;
   color: rgb(44, 44, 44);
 }
@@ -74,15 +74,27 @@ p { text-align: justify; }
 
 #ava {
   position: absolute;
-  right: 20%;
-  top: 160px;
-  border: 10px solid white; 
+  right: 10%;
+  top: 140px;
+  border: 5px solid white; 
   border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+#ava img {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 24px;
 }
 
 #name-section {
   margin-top: 0;
   padding-left: 70px; 
+  padding-right: 70px;
   display: flex;
   align-items: center;
   height: 5em;
@@ -115,4 +127,43 @@ a {
 
 .footer-link img {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  .header {
+    width: 70%;
+  }
+  .main {
+    width: 70%;
+  }
+  .footer {
+    width: 70%;
+  }
+  #ava {
+    position: absolute;
+    right: 20%;
+    top: 160px;
+    border: 10px solid white; 
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+
+}
+@media screen and (min-width: 1400px) {
+  h1 {
+    font-size: 34px;
+  }
+  .header {
+    width: 1000px;
+  }
+  .main {
+    width: 1000px;
+  }
+  .footer {
+    width: 1000px;
+  }
 }
