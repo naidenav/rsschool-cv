@@ -53,7 +53,10 @@
       <section>
         <h3>Objective</h3>
         <hr>
-        <p>I am seeking a position with a company where i can <strong>realize my intellectual and physical capabilities</strong>. I am used to learning and adapting to something new. In programming, I am attracted to solving complex problems and the need to <strong>use creativity and ingenuity</strong>.</p>
+        <p>I am seeking a position with a company where i can <strong>realize my intellectual 
+          and physical capabilities</strong>. I am used to learning and adapting to something 
+          new. In programming, I am attracted to solving complex problems and the need to <strong>
+            use creativity and ingenuity</strong>.</p>
       </section>
       <section>
         <h3>Skills</h3>
@@ -61,53 +64,44 @@
         <ul>
           <li>HTML</li>
           <li>CSS</li>
+          <li>SASS</li>
           <li>JavaScript</li>
           <li>Git</li>
           <li>Node js</li>
+          <li>Express</li>
+          <li>MongoDB</li>
+          <li>Angular</li>
+          <li>Angular Material</li>
         </ul>
       </section>
       <section>
-        <h3>Sample code</h3>
+        <h3>Code examples</h3>
         <hr>
-        <pre><code data-language="javascript">
-      $(document).ready(function(){
-        $('.menu-btn').click(function(event){
-          event.preventDefault();
-          $('.menu').toggleClass('menu-active');
-          $('.content').toggleClass('content-active');
-          $('.menu-btn').toggleClass('menu-btn-active');
-        });
-      });
-      function displayRecipe() {
-        const recipeNumber = window.location.search;
-        const urlParams = new URLSearchParams(recipeNumber);
-        const recipeURLParams = urlParams.get('number-recipe');
-
-        $.getJSON("recipes.json", function(data) {
-          let dataRecipes = data;
-          let recipeOutput;
-          recipeOutput = "&lt;h3&gt;Ингредиенты:&lt;/h3&gt;&lt;ul&gt;";
-          for (let j in dataRecipes[recipeURLParams].ingredients) {
-            recipeOutput += "&lt;li&gt;" + dataRecipes[recipeURLParams].ingredients[j].ingredientName + 
-            " - " + dataRecipes[recipeURLParams].ingredients[j].ingredientQuantity
-          };
-          recipeOutput += "&lt;/ul&gt;&lt;h3&gt;Рецепт:&lt;/h3&gt;";
-          recipeOutput += "&lt;p&gt;" + dataRecipes[recipeURLParams].recipe + "&lt;/p&gt;";
-          document.getElementById('recipe-page').innerHTML=recipeOutput;
-        });
-      };
-      window.onload = displayRecipe;</code></pre>
+        <a
+          class="footer-link link"
+          href="https://github.com/naidenav/rsschool"><img
+          src="icons/github.svg"
+          height="30"
+          width="30"
+          alt="github-icon">https://github.com/naidenav</a>
       </section>
       <section>
         <h3>Work experience</h3>
         <hr>
-        <p>For half a year before the rs-school course I studied <mark>html, css, javascript, node js</mark> and created my own website about cooking.</p>
+        <p>For half a year before the rs-school course I studied <mark>html, css, javascript, node js</mark>
+          and created my own website about cooking. After that, I completed
+          <a class="link" href="https://app.rs.school/certificate/f5y9jyrt">RS School courses</a>,
+          where I significantly expanded my current skills and acquired new
+          (SASS, Git, Express, MongoDB, Angular). At the moment I am going through the 3rd stage 
+          of training at RS School on the Angular framework.
+        </p>
       </section>
       <section>
         <h3>Education</h3>
         <hr>
         <p><b>Belarussian National Technical University</b> - 
-Civil Engineering faculty, Industrial and civil Engineering (2011 - 2016)</p>
+          Civil Engineering faculty, Industrial and civil Engineering (2011 - 2016)
+        </p>
       </section>
       <section>
         <h3>English</h3>
@@ -116,9 +110,14 @@ Civil Engineering faculty, Industrial and civil Engineering (2011 - 2016)</p>
       </section>
     </main>
     <footer class="footer">
-      <a class="footer-link" href="https://github.com/naidenav"><img src="icons/github.svg" height="30" width="30" alt="github-icon">&emsp;Github</a>
-      <a class="footer-link" href="https://rs.school/js/"><img src="icons/rs_school_js.svg" height="60" width="60" alt="rs-icon">&emsp;Rolling Scopes School</a>
-      <p>© 2021 Alexander Naiden</p>
+      <a
+        class="footer-link"
+        href="https://rs.school/js/"><img
+        src="icons/rs_school_js.svg"
+        height="60"
+        width="60"
+        alt="rs-icon">Rolling Scopes School</a>
+      <p>© 2021&emsp; Alexander Naiden</p>
     </footer>
   </body>
 </html>
