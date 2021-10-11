@@ -1,1 +1,1 @@
-https://your-github-account.github.io/rsschool-cv/cv
+https://nifty-chandrasekhar-19f096.netlify.app/
